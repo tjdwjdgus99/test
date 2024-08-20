@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mz01_main_v2</class>
+ <widget class="QMainWindow" name="mz01_main_v2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MZ-01</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="MZ-01"/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#mz01_main_v2
+{
+	border:3px;
+    border-radius: 20px;
+	border-color:rgb(0,0,0);
+	Border-Style:solid;
+	background-repeat: no-repeat;
+	background-color:rgb(0,0,0);
+}</string>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1920</width>
+      <height>1080</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#widget{
+
+	border-color:rgb(0,0,0);
+	Border-Style:solid;
+	background-repeat: no-repeat;
+	background-color:rgb(0,0,0);
+}</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>50</y>
+       <width>1821</width>
+       <height>621</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>950</width>
+       <height>350</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Agency FB</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="acceptDrops">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#label
+{
+	background-color:rgb(0,0,0);
+	color:rgb(255,255,255);
+	Border-width:3px; 
+	Border-Style:dashed;
+    border-radius: 15px;
+	border-color: rgb(255,255,255);
+}</string>
+     </property>
+     <property name="text">
+      <string>파일을 드래그해서 넣어주세요.</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>880</x>
+       <y>390</y>
+       <width>161</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>나눔고딕 ExtraBold</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton_2
+{
+	background-color:rgb(0,0,0);
+	color:rgb(255,255,255);
+	border:3px;
+    border-radius: 20px;
+	border-color:rgb(255,255,255);
+	Border-Style:solid;
+	background-repeat: no-repeat
+}
+#pushButton_2:pressed
+{
+	background-color:rgb(117,91,244);
+	color:rgb(255,255,255);
+	border:0px;
+	background-repeat: no-repeat
+}
+#pushButton_2:hover
+{
+
+	background-color:rgb(117,91,244);
+	color:rgb(255,255,255);
+	border:0px;
+	background-repeat: no-repeat
+}</string>
+     </property>
+     <property name="text">
+      <string>+  파일 선택</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>850</x>
+       <y>920</y>
+       <width>271</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>나눔고딕코딩</family>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton_3
+{
+	color:rgb(67,41,194);
+	border:3px;
+    border-radius: 30px;
+	border-color:rgb(67,41,194);
+	Border-Style:solid;
+	background-repeat: no-repeat
+}
+#pushButton_3:pressed
+{
+	background-color:rgb(117,91,244);
+	color:rgb(255,255,255);
+	border:0px;
+	background-repeat: no-repeat
+}
+#pushButton_3:hover
+{
+
+	background-color:rgb(117,91,244);
+	color:rgb(255,255,255);
+	border:0px;
+	background-repeat: no-repeat
+}</string>
+     </property>
+     <property name="text">
+      <string>이미지 초기화</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>1220</x>
+       <y>920</y>
+       <width>271</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>나눔고딕코딩</family>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton_4
+{
+	background-color:rgb(117,91,244);
+	color:rgb(255,255,255);
+	border:1px;
+    border-radius: 30px;
+	border-color:rgb(255,255,255);
+	background-repeat: no-repeat
+}
+#pushButton_4:pressed
+{
+	background-color:rgb(67,41,194);
+	color:rgb(255,255,255);
+	border:0px;
+	background-repeat: no-repeat
+}
+#pushButton_4:hover
+{
+
+	background-color:rgb(67,41,194);
+	color:rgb(255,255,255);
+	border:0px;
+	background-repeat: no-repeat
+}</string>
+     </property>
+     <property name="text">
+      <string>변환하기</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>850</x>
+       <y>700</y>
+       <width>351</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>500</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#groupBox_2
+{
+	border: solid;
+	border-color: rgb(0,0,0);
+}</string>
+     </property>
+     <property name="title">
+      <string notr="true"/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <widget class="QRadioButton" name="radioButton_3">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>나눔고딕코딩</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#radioButton_3
+{
+	background-color:rgb(0,0,0);
+	color:rgb(255,255,255);
+}</string>
+      </property>
+      <property name="text">
+       <string>모자이크</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_4">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>30</y>
+        <width>90</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>나눔고딕코딩</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#radioButton_4
+{
+	background-color:rgb(0,0,0);
+	color:rgb(255,255,255);
+}</string>
+      </property>
+      <property name="text">
+       <string>블러</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>720</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>80</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>나눔고딕코딩</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#label_4
+{
+	background-color:rgb(80,80,80);
+	color:rgb(255,255,255);
+    height: 30px;
+	border-radius: 15;
+}</string>
+     </property>
+     <property name="text">
+      <string>효과</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>1700</x>
+       <y>810</y>
+       <width>81</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>81</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>나눔고딕코딩</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#comboBox
+{
+	background-color:rgb(0,0,0);
+	color:rgb(255,255,255);
+	Border-width:2px; 
+	Border-Style:solid;
+	border-color: white;
+}</string>
+     </property>
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <property name="insertPolicy">
+      <enum>QComboBox::NoInsert</enum>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QComboBox::AdjustToContents</enum>
+     </property>
+     <item>
+      <property name="text">
+       <string>0%</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>10%</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>20%</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>30%</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>40%</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>50%</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>60%</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>70%</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>80%</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>90%</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>100%</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider">
+     <property name="geometry">
+      <rect>
+       <x>890</x>
+       <y>810</y>
+       <width>791</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#horizontalSlider::groove:horizontal {
+    border-radius: 10px;
+    height: 5px;
+    margin: 0px;
+    background-color: rgb(117,91,244);
+}
+
+#horizontalSlider::handle:horizontal {
+    background-color: rgb(117,91,244);
+    border: none;
+    width: 15px;
+    margin: -8px 0;
+    border-radius: 7;
+    padding: -8px 0px;
+}
+#horizontalSlider::handle:horizontal:hover {
+    background-color: rgb(67,41,194);
+}
+#horizontalSlider::handle:horizontal:pressed {
+    background-color: rgb(67,41,194);
+}
+
+#horizontalSlider::add-page:horizontal{
+    background-color: rgb(100,100,100);
+}</string>
+     </property>
+     <property name="maximum">
+      <number>100</number>
+     </property>
+     <property name="singleStep">
+      <number>10</number>
+     </property>
+     <property name="value">
+      <number>20</number>
+     </property>
+     <property name="tracking">
+      <bool>true</bool>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="tickPosition">
+      <enum>QSlider::TicksBothSides</enum>
+     </property>
+     <property name="tickInterval">
+      <number>10</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>810</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>80</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>나눔고딕코딩</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#label_5
+{
+	background-color:rgb(80,80,80);
+	color:rgb(255,255,255);
+    height: 30px;
+	border-radius: 15;
+}</string>
+     </property>
+     <property name="text">
+      <string>강도</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>1040</x>
+       <y>920</y>
+       <width>271</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>나눔고딕코딩</family>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton
+{
+	background-color:rgb(117,91,244);
+	color:rgb(255,255,255);
+	border:1px;
+    border-radius: 30px;
+	border-color:rgb(255,255,255);
+	background-repeat: no-repeat
+}
+#pushButton:pressed
+{
+	background-color:rgb(67,41,194);
+	color:rgb(255,255,255);
+	border:0px;
+	background-repeat: no-repeat
+}
+#pushButton:hover
+{
+
+	background-color:rgb(67,41,194);
+	color:rgb(255,255,255);
+	border:0px;
+	background-repeat: no-repeat
+}</string>
+     </property>
+     <property name="text">
+      <string>시작하기</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="progressBar">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>1010</y>
+       <width>1871</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#progressBar
+{
+	color:rgb(255,255,255);
+}</string>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>760</x>
+       <y>880</y>
+       <width>741</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#label_2
+{
+	background-color:rgb(0,0,0);
+	color:rgb(255,255,255);
+}</string>
+     </property>
+     <property name="text">
+      <string>저장위치 : </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>1870</x>
+       <y>10</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>나눔고딕코딩</family>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton_5
+{
+    border-image: url(./resources/close_button.png);
+	color:rgb(255,255,255);
+    background-repeat: no-repeat;
+}
+#pushButton_5:pressed
+{
+    border-image: url(./resources/close_button.png);
+	color:rgb(255,255,255);
+    background-repeat: no-repeat;
+}
+#pushButton_5:hover
+{
+
+    border-image: url(./resources/close_button_hover.png);
+	color:rgb(255,255,255);
+    background-repeat: no-repeat;
+}</string>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>1330</x>
+       <y>720</y>
+       <width>80</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>80</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>나눔고딕코딩</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#label_3
+{
+	background-color:rgb(80,80,80);
+	color:rgb(255,255,255);
+    height: 30px;
+	border-radius: 15;
+}</string>
+     </property>
+     <property name="text">
+      <string>적용범위</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_4">
+     <property name="geometry">
+      <rect>
+       <x>1610</x>
+       <y>730</y>
+       <width>80</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>80</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>나눔고딕코딩</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#checkBox_4
+{
+	background-color:rgb(0,0,0);
+	color:rgb(255,255,255);
+}</string>
+     </property>
+     <property name="text">
+      <string>번호판</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox">
+     <property name="geometry">
+      <rect>
+       <x>1450</x>
+       <y>730</y>
+       <width>80</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>80</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>나눔고딕코딩</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#checkBox
+{
+	background-color:rgb(0,0,0);
+	color:rgb(255,255,255);
+}</string>
+     </property>
+     <property name="text">
+      <string>사람</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="tristate">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_2">
+     <property name="geometry">
+      <rect>
+       <x>1530</x>
+       <y>730</y>
+       <width>80</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>80</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>나눔고딕코딩</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#checkBox_2
+{
+	background-color:rgb(0,0,0);
+	color:rgb(255,255,255);
+}</string>
+     </property>
+     <property name="text">
+      <string>얼굴</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>790</y>
+       <width>271</width>
+       <height>74</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#label_6
+{
+    border-image: url(./resources/sijunglogo.png);
+	color:rgb(255,255,255);
+    background-repeat: no-repeat;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_6">
+     <property name="geometry">
+      <rect>
+       <x>1400</x>
+       <y>920</y>
+       <width>271</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>나눔고딕코딩</family>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#pushButton_6
+{
+	background-color:rgb(117,91,244);
+	color:rgb(255,255,255);
+	border:1px;
+    border-radius: 30px;
+	border-color:rgb(255,255,255);
+	background-repeat: no-repeat
+}
+#pushButton_6:pressed
+{
+	background-color:rgb(67,41,194);
+	color:rgb(255,255,255);
+	border:0px;
+	background-repeat: no-repeat
+}
+#pushButton_6:hover
+{
+
+	background-color:rgb(67,41,194);
+	color:rgb(255,255,255);
+	border:0px;
+	background-repeat: no-repeat
+}</string>
+     </property>
+     <property name="text">
+      <string>저장 폴더 열기</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
